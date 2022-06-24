@@ -7,6 +7,9 @@ describe('Cypress basics', () => {
         //const title = cy.title()
         //console.log(title)
 
+        cy.pause() //Permite rodar os testes pausadamente, com gerenciamento do cypress
+        // cy.debug() mostra mais infos no console
+
         cy.title().should('be.equal', 'Campo de Treinamento')
         cy.title().should('contain', 'Campo')
 
